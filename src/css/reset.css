@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  width: 100%;
+}
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background: url(../images/bg-desktop.svg) center center var(--Violet);
+  margin: 0 6% 6% 6%;
+  height: 1080px;
+  overflow: hidden;
+}
