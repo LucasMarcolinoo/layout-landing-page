@@ -1,53 +1,47 @@
-body {
-    background: url(../images/bg-desktop.svg) center center var(--Violet);
-    margin: 0 6% 6% 6%;
+.flex {
+    display: flex;
+    align-items: center;
 }
 
 .header {
     height: 125px;
-    display: flex;
-    align-items: center;
     margin-bottom: 30px;
 }
 
 .services {
-    display: flex;
     width: 100%;
+    display: flex;
 }
 
 .imagem {
     width: 100%;
-    box-sizing: border-box;
 }
 
 .section {
     margin-left: 5%;
-    width: 80%;
-    padding-right: 8%;
+    width: 85%;
+    padding-right: 5%;
 }
 
 .section h1 {
     font-size: 45px;
-    color: white;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 40px 0 30px 0;
 }
 
 .section p {
-    color: wheat;
-    font-size: 20px;
-    margin-bottom: 15px;
+    color: #fff;
+    font-size: 19.5px;
+    margin-bottom: 35px;
+    font-weight: 400;
 }
 
 .button {
     width: 200px;
     height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
-    text-align: center;
     cursor: pointer;
     background-color: #fff;
     border-radius: 30px;
@@ -64,10 +58,8 @@ body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
     justify-content: center;
 }
 
@@ -77,10 +69,9 @@ body {
 
 .rodape {
     width: 100%;
-    display: flex;
     gap: 15px;
     justify-content:right;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .icon {
@@ -108,32 +99,21 @@ body {
 
 .icon:hover {
     border: 2px solid var(--Soft-Magenta);
+    transition: 0.4s;
 }
 
 .icon a:hover {
     color: var(--Soft-Magenta);
+    transition: 0.4s;
 }
 
 @media(max-width:768px) {
 
-    .service {
-        width: 100;
-    }
-
     .services {
         flex-direction: column;
-        width: 100%;
         display: flex;
     }
-
-    .section h1 {
-        font-size: 27px;
-    }
-
-    .section p {
-        font-size: 17.5px;
-    }
-
+    
     .section {
         padding: 0;
         width: 100%;
@@ -144,14 +124,20 @@ body {
         align-items: center;
     }
 
+    .section h1 {
+        font-size: 27px;
+    }
+
+    .section p {
+        font-size: 17.5px;
+    }
+
     .button {
         height: 38px;
-        text-align: center;
     }
 
     .rodape {
         margin-top: 60px;
-        display: flex;
         justify-content: center;
     }
 }
